@@ -1,0 +1,325 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar{
+  width: 60px;
+  height: 100vh;
+  background-color: rgb(227, 236, 241);
+  position: fixed;
+  left: 0;
+}
+
+#menu{
+  width: 20px;
+  margin: 23px 50px 0 20px;
+  cursor: pointer;
+}
+
+#plus{
+  width: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 73px 0 0 20px;
+  cursor: pointer;
+}
+
+#ul{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#li{
+  display: flex;
+  flex-direction: row;
+  align-items:center ;
+  width: 145px;
+  height: auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#li:hover{
+  background-color: rgba(215, 216, 216, 0.7);
+}
+
+#imgmsg{
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+}
+
+#listitem{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 145px;
+  display: block;
+}
+
+#setting{
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 20px 20px;
+  cursor: pointer;
+}
+
+#history{
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 60px 20px;
+  cursor: pointer;
+}
+
+#question{
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 100px 20px;
+  cursor: pointer;
+}
+.seconddiv{
+  display: flex;
+  padding-left: 0;
+}
+
+#gemini {
+  font-family: sans-serif;
+  color: black;
+  opacity: 70%;
+  position: fixed;
+  left: 0;
+  top: 20px;
+  font-size: 25px;
+}
+
+
+#hello{
+  font-size: 40px;
+  background: linear-gradient(90deg, #3d72ee, #8d24d3, #e3450c);
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-family:'Segoe UI',  Verdana, sans-serif ;
+  opacity: 80%;
+}
+
+#how{
+  font-size: 40px;
+  color: rgb(159, 158, 158);
+  font-family:'Segoe UI',  Verdana, sans-serif ;
+  opacity: 60%;
+  margin-bottom: 40px;
+}
+
+.centrediv{
+  width: 820px;
+  margin-left: 0;
+  margin-top: 120px;
+}
+.fourdiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#one{
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: rgb(227, 236, 241);
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#two{
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: rgb(227, 236, 241);
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#three{
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: rgb(227, 236, 241);
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#four{
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: rgb(227, 236, 241);
+  padding: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#one:hover{
+  background-color: rgb(226, 230, 233);
+  cursor: pointer;
+}
+
+#two:hover{
+  background-color: rgb(226, 230, 233);
+  cursor: pointer;
+}
+
+#three:hover{
+  background-color: rgb(226, 230, 233);
+  cursor: pointer;
+}
+
+#four:hover{
+  background-color: rgb(226, 230, 233);
+  cursor: pointer;
+}
+
+#img1{
+  width: 30px;
+  position: absolute;
+  bottom: 10px;  
+  right: 10px;
+}
+
+#img2{
+  width: 30px;
+  position: absolute;
+  bottom: 10px;  
+  right: 10px;
+}
+
+#img3{
+  width: 33px;
+  position: absolute;
+  bottom: 10px;  
+  right: 10px;
+}
+
+#img4{
+  width: 40px;
+  position: absolute;
+  bottom: 8px;  
+  right: 10px;
+}
+
+.input-box{
+  position: fixed;
+  bottom: 0;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.input{
+  margin-bottom: 10px;
+  margin-top: 100px;
+  width: 820px;
+  height: 50px;
+  background-color: rgb(227, 236, 241);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  bottom: 0;
+  padding: 0 80px 0 20px;
+  font-size: 15px;
+}
+
+#gallery{
+  position: absolute;
+  right:55px;
+  top: 70%;
+  transform: translateY(-50%);
+  width: 20px;
+  cursor: pointer;
+}
+
+#mic{
+  position: absolute;
+  right: 20px;
+  top: 70%;
+  transform: translateY(-50%);
+  width: 20px;
+  cursor: pointer;
+}
+
+#send{
+  position: absolute;
+  right: 20px;
+  top: 70%;
+  transform: translateY(-50%);
+  width: 20px;
+  cursor: pointer;
+  
+}
+.para{
+  margin-left: 25px;
+}
+
+#ques{
+  margin-left: 25px;
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+#user{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#geminiIcon{
+  width: 50px;
+}
+
+#ans{
+  font-family: sans-serif;
+  line-height: 2;
+  width: 760px;
+  max-height: 600px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  scrollbar-width: none;
+}
+
+.loader{
+  width: 700vw;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.loader hr{
+  border-radius: 4px;
+  border: none;
+  background-color:#f6f7f8 ;
+  background: linear-gradient(to right, #9ed7ff,#ffffff, #9ed7ff);
+  background-size: 800px 50px;
+  height: 20px;
+}
